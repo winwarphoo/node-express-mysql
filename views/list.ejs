@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <h1>リスト</h1>
+  <table border="1">
+    <% countries.forEach((country) => { %>
+      <tr>
+        <td><%= country.code %></td>
+        <td><%= country.name %></td>
+        <td><%= country.region %></td>
+        <td><%= country.continent %></td>
+      </tr>
+    <% }) %>
+  </table>
+</body>
+</html>
